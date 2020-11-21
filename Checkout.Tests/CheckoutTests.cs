@@ -39,7 +39,7 @@ namespace Checkout.Tests
             var till = new Till();
 
             // Act
-            till.Scan("AB"); //scanning on the till in the "till" variable
+            till.Scan("AB"); 
             
             // Assert
             Assert.AreEqual(80.0, till.Total());
@@ -50,7 +50,7 @@ namespace Checkout.Tests
         {
             Till till = new Till();
             till.Scan("CDBA");
-            NUnit.Framework.Assert.AreEqual(110.0, till.Total()); //it should be 110 as per the instructions
+            NUnit.Framework.Assert.AreEqual(110.0, till.Total());
         }
 
         [Test]
@@ -60,7 +60,7 @@ namespace Checkout.Tests
             Till till = new Till();
             
             // Act
-            till.Scan("AA"); //extra scan removed
+            till.Scan("AA");\
             
             Assert.AreEqual(100, till.Total());
         }
