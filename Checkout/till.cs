@@ -21,7 +21,7 @@ namespace Checkout
             {
                 if(item.Key.Equals('A'))
                 {
-                    total += AddA(item.Value.ToString()); //added function to implement discount
+                    total += AddA(item.Value.ToString());
                 }
                 else if(item.Key.Equals('B'))
                 {
@@ -60,7 +60,7 @@ static double AddItemD(double total, KeyValuePair<char, int> item)
 		
         public double AddA(string numberItems)
         {
-            int items = Int32.Parse(numberItems); //changed double to int so the number of pairs does not have any decimals
+            int items = Int32.Parse(numberItems); 
 
             if(items == 0) return 0;
 
@@ -74,7 +74,7 @@ static double AddItemD(double total, KeyValuePair<char, int> item)
 
         public double AddB(string numberItems)
         {
-            int items = Int32.Parse(numberItems); //changed double to int so the number of pairs does not have any decimals
+            int items = Int32.Parse(numberItems);
 
             if(items == 0) return 0;
 
